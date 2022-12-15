@@ -1,0 +1,26 @@
+
+.form-left {
+    margin-left: 30px;
+}
+.form-left label ,input, textarea {    
+    font-family: $font1;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.679);
+    display: block;    
+    margin-bottom: 15px;   
+    }
+
+    
+
+    .form-left input, textarea {
+        margin-bottom: 15px;
+        width: 90%;
+        border: 1px solid rgba(0, 0, 0, 0.371);
+        border-radius: 3px ;
+        min-height: 30px;
+        resize: none;
+    }
+

@@ -7,3 +7,24 @@
     border-radius: 50%;
     border: 3px solid white;
 }
+
+.btn-first{
+    padding:10px 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: transparent;
+    cursor: pointer;
+    transition: 1s;
+
+    &.send{
+        color:  rgba(0, 0, 0, 0.371);
+        border-color:  rgba(0, 0, 0, 0.371);
+        margin: 30px 0;;
+    }
+
+    &:hover{
+        color: white;
+        background: black;
+    }
+}

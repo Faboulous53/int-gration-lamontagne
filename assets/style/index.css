@@ -79,7 +79,7 @@ nav .nav-right ul li {
 header {
   width: 90%;
   margin: 20% auto;
-  height: 34vh;
+  min-height: 10vh;
   text-align: center;
 }
 header h1 {
@@ -98,6 +98,150 @@ header p {
   letter-spacing: 0.1rem;
 }
 
+.first-section {
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+}
+.first-section .main-section {
+  padding-top: 60px;
+  text-align: center;
+}
+.first-section .main-section h3 {
+  font-family: merri, serif;
+  position: relative;
+}
+.first-section .main-section h3:before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.174);
+  height: 1px;
+  width: 25%;
+  -webkit-transform: translateX(-125%);
+      -ms-transform: translateX(-125%);
+          transform: translateX(-125%);
+  top: 50%;
+}
+.first-section .main-section h3:after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.174);
+  height: 1px;
+  width: 25%;
+  -webkit-transform: translateX(25%);
+      -ms-transform: translateX(25%);
+          transform: translateX(25%);
+  top: 50%;
+}
+.first-section .main-section h2 {
+  width: 60%;
+  margin: 50px auto;
+  text-transform: uppercase;
+  font-family: inter-bold, sans-serif;
+  font-size: 4rem;
+  letter-spacing: 4px;
+}
+.first-section .main-section p {
+  width: 40%;
+  margin: 50px auto;
+  font-style: italic;
+  font-family: merri, serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 2.3rem;
+}
+.first-section .main-section img {
+  display: block;
+  width: 80%;
+  margin: 80px auto;
+}
+
+.dual-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 90px;
+  border-top: 1px solid rgba(0, 0, 0, 0.278);
+}
+.dual-picture .left-picture {
+  border-right: 1px solid rgba(0, 0, 0, 0.278);
+}
+.dual-picture .left-picture, .dual-picture .right-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 50px;
+}
+.dual-picture .left-picture h3, .dual-picture .right-picture h3 {
+  margin-top: 70px;
+  padding-bottom: 20px;
+  font-family: merri, serif;
+  font-size: 0.8rem;
+}
+.dual-picture .left-picture h2, .dual-picture .right-picture h2 {
+  font-family: inter-bold, sans-serif;
+  width: 40%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.dual-picture .left-picture img, .dual-picture .right-picture img {
+  width: 80%;
+}
+.dual-picture .left-picture p, .dual-picture .right-picture p {
+  width: 80%;
+  margin: 30px 0;
+  line-height: 1.8rem;
+  font-family: merri, serif;
+  font-size: 0.8rem;
+}
+
+.second-section {
+  margin: 30px auto;
+  width: 80%;
+  background: white;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.form-left {
+  padding-top: 50px;
+  border-right: 1px solid rgba(0, 0, 0, 0.278);
+}
+
+.form-left {
+  margin-left: 30px;
+}
+
+.form-left label, input, textarea {
+  font-family: inter-bold, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.679);
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-left input, textarea {
+  margin-bottom: 15px;
+  width: 90%;
+  border: 1px solid rgba(0, 0, 0, 0.371);
+  border-radius: 3px;
+  min-height: 30px;
+  resize: none;
+}
+
 .btn-arrow {
   margin: 6rem;
   font-size: 2rem;
@@ -106,4 +250,25 @@ header p {
   padding: 30px 30px;
   border-radius: 50%;
   border: 3px solid white;
+}
+
+.btn-first {
+  padding: 10px 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+.btn-first.send {
+  color: rgba(0, 0, 0, 0.371);
+  border-color: rgba(0, 0, 0, 0.371);
+  margin: 30px 0;
+}
+.btn-first:hover {
+  color: white;
+  background: black;
 }/*# sourceMappingURL=index.css.map */

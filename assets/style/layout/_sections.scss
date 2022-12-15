@@ -1,0 +1,122 @@
+.first-section{
+    background: white;
+    width: 80%;
+    margin: 0 auto;
+    
+
+    .main-section {
+        padding-top: 60px;
+        text-align: center;
+    }
+
+        .main-section h3{
+            font-family: $font2;
+            position: relative;
+            
+        
+            &:before{
+                content: "";
+                position: absolute;
+                background: rgba(0, 0, 0, 0.174);
+                height: 1px;
+                width: 25%;
+                transform: translateX(-125%);
+                top: 50%;                
+            }
+
+            &:after{
+                content: "";
+                position: absolute;
+                background: rgba(0, 0, 0, 0.174);
+                height: 1px;
+                width: 25%;
+                transform: translateX(25%);
+                top: 50%;
+                
+            }
+        }
+
+        .main-section h2{
+            width: 60%;
+            margin: 50px auto;
+            text-transform: uppercase;
+            font-family: $font1;
+            font-size: 4rem;
+            letter-spacing: 4px;
+        }
+
+        .main-section p{
+            width: 40%;
+            margin: 50px  auto;
+            font-style: italic;
+            font-family: $font2;
+            font-weight: 100;
+            letter-spacing: 1px;
+            line-height: 2.3rem;
+        }
+
+        .main-section img {
+            display: block;
+            width: 80%;            
+            margin: 80px auto;            
+        }
+}
+
+.dual-picture {
+    display: flex;
+    margin-top: 90px;
+    border-top: 1px solid rgba(0, 0, 0, 0.278);
+
+    .left-picture{
+        border-right: 1px solid rgba(0, 0, 0, 0.278);
+    }
+    .left-picture, .right-picture{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 50px;
+        
+    }
+
+    .left-picture h3, .right-picture h3{
+        margin-top: 70px;
+        padding-bottom: 20px;
+        font-family: $font2;
+        font-size: 0.8rem;
+    }
+
+    .left-picture h2, .right-picture h2{
+        font-family: $font1;
+        width: 40%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .left-picture img, .right-picture img{
+        width: 80%;
+    }
+
+    .left-picture p, .right-picture p {
+        width: 80%;
+        margin: 30px 0;
+        line-height: 1.8rem;
+        font-family: $font2;
+        font-size: 0.8rem;
+
+    }
+}
+
+.second-section{
+    margin: 30px auto;
+    width: 80%;
+    background: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.form-left{
+    padding-top: 50px;
+    border-right: 1px solid rgba(0, 0, 0, 0.278);
+}
+
