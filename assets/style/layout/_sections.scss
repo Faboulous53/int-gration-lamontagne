@@ -120,3 +120,67 @@
     border-right: 1px solid rgba(0, 0, 0, 0.278);
 }
 
+.form-right{
+    display: grid;  
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    .first, .second, .third, .fourth {
+        display: flex; 
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.278);
+    }
+
+    .first h3, .second h3, .third h3, .fourth h3{
+        text-align: left;
+        position: absolute;
+        left: 50px;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-family: $font1;
+        letter-spacing: 1px;
+        color: gray;
+
+    }
+
+    .first p {
+        
+        font-family: $font2;
+        
+    } 
+    .first p, .second p, .third p, .fourth ul{
+        color: gray;
+        font-size: 0.8rem;        
+        position: absolute;
+        left: 200px;
+    }
+
+    .fourth ul  {
+        display: flex;       
+    }
+
+    .fourth ul li {
+        padding-right: 20px;
+        color: black; 
+        cursor: pointer;       
+    }
+
+    .fourth ul li i{
+        border: 2px solid black;
+        padding: 15px;
+        border-radius: 50%;
+        border-color: gray;
+        transition: 2s;
+
+        &:hover {
+            background: black;
+            color: white;
+        }
+    }
+
+    
+}
+
+

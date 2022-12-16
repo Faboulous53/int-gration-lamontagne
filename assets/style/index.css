@@ -218,6 +218,67 @@ header p {
   border-right: 1px solid rgba(0, 0, 0, 0.278);
 }
 
+.form-right {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.form-right .first, .form-right .second, .form-right .third, .form-right .fourth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.278);
+}
+.form-right .first h3, .form-right .second h3, .form-right .third h3, .form-right .fourth h3 {
+  text-align: left;
+  position: absolute;
+  left: 50px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-family: inter-bold, sans-serif;
+  letter-spacing: 1px;
+  color: gray;
+}
+.form-right .first p {
+  font-family: merri, serif;
+}
+.form-right .first p, .form-right .second p, .form-right .third p, .form-right .fourth ul {
+  color: gray;
+  font-size: 0.8rem;
+  position: absolute;
+  left: 200px;
+}
+.form-right .fourth ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form-right .fourth ul li {
+  padding-right: 20px;
+  color: black;
+  cursor: pointer;
+}
+.form-right .fourth ul li i {
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 50%;
+  border-color: gray;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+}
+.form-right .fourth ul li i:hover {
+  background: black;
+  color: white;
+}
+
 .form-left {
   margin-left: 30px;
 }
