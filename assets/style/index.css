@@ -22,7 +22,7 @@ nav {
   display: grid;
   grid-template-columns: 50% 50%;
   width: 80%;
-  height: 80px;
+  height: 10vh;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.313);
 }
@@ -75,11 +75,16 @@ nav .nav-right ul li {
   font-size: 1.5rem;
   color: white;
 }
+@media screen and (max-width: 865px) {
+  nav .nav-right {
+    display: none;
+  }
+}
 
 header {
+  margin: 10% auto 0;
   width: 90%;
-  margin: 20% auto;
-  min-height: 10vh;
+  height: 76vh;
   text-align: center;
 }
 header h1 {
@@ -172,6 +177,32 @@ header p {
   display: block;
   width: 80%;
   margin: 80px auto;
+}
+@media screen and (max-width: 900px) {
+  .first-section .main-section h2 {
+    font-size: 3rem;
+  }
+  .first-section .dual-picture {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (max-width: 705px) {
+  .first-section .main-section h2 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+}
+@media screen and (max-width: 565px) {
+  .first-section .main-section h2 {
+    font-size: 1rem;
+    font-weight: 1000;
+  }
+  .first-section .main-section p {
+    font-size: 0.8rem;
+  }
 }
 
 .dual-picture {

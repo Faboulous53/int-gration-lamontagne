@@ -42,7 +42,10 @@
             text-transform: uppercase;
             font-family: $font1;
             font-size: 4rem;
-            letter-spacing: 4px;
+            letter-spacing: 4px; 
+            
+           
+            
         }
 
         .main-section p{
@@ -60,6 +63,37 @@
             width: 80%;            
             margin: 80px auto;            
         }
+
+        @media screen and (max-width: 900px) {
+            .main-section h2{
+             font-size: 3rem;
+            }
+
+            .dual-picture{
+                flex-direction: column;
+            }
+     
+         }
+
+         @media screen and (max-width: 705px) {
+            .main-section h2{
+             font-size: 2rem;
+             font-weight: 900;
+            }
+     
+         }
+
+         @media screen and (max-width: 565px) {
+            .main-section h2{
+             font-size: 1rem;
+             font-weight: 1000;
+            }
+
+            .main-section p{
+                font-size: 0.8rem;
+            }
+     
+         }
 }
 
 .dual-picture {
@@ -105,6 +139,8 @@
         font-size: 0.8rem;
 
     }
+
+    
 }
 
 .second-section{
@@ -178,8 +214,10 @@
             background: black;
             color: white;
         }
-    }
+    }  
 
+    
+   
     
 }
 
